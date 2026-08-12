@@ -23,9 +23,10 @@ While the eval set may not be the most accurate, it provides a decent starting p
 
 ## Improvement strategies: 
 1. Better chunking strategies: The current approach is simplistic and is prone to missing context between pages of the same document
-2. Reranking: The approach can be evaluated if its actually helping or only adding complexity
-3. Eval dataset: Need more high quality questions. Maybe using a better LLM to generate more questions to test the system can be an effective way
-4. Eval metrics: The qualitative metric can be diversified to include completeness, faithfulness, etc.
+2. Search: Add hybrid search techniques and keyword matching methods like BM25
+3. Reranking: The approach can be evaluated if its actually helping or only adding complexity
+4. Eval dataset: Need more high quality questions. Maybe using a better LLM to generate more questions to test the system can be an effective way
+5. Eval metrics: The qualitative metric can be diversified to include completeness, faithfulness, etc.
 
 ## Possible methodology additions: 
 1. Multimodal RAG
