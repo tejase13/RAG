@@ -20,7 +20,9 @@ While the eval set may not be the most accurate, it provides a decent starting p
 ## Eval metrics: 
 1. Retrieval: To test the retrieval, nDCG and Recall @k are used
 2. Response: The LLM as a judge approach is used. The ground truth and the generated response are compared to evaluate the quality of the response.
+
    nDCG is used as it prioritises both the relevance of the results and the positions occupied by the relevant results. If the position of a very relevant result is at the end of the list, then that gets penalised.
+
    Recall @k: If there are millions of documents, then the recall metric may not be very useful as there are 100-1000s of relevant documents which can diminish the numerator and thereby the values of recall will be low.
    However, in this synthetically generated eval set of questions, we are using at most 3 chunks to generate a response. Thus, the denominator will have a max value of 3 and will provide a good recall value of the system. 
 
